@@ -20,7 +20,11 @@ public class AddressBook
     public static void main(String[] args) {
         BuddyInfo buddy = new BuddyInfo("Peter Griffin", "31 Spooner St.", "123-456-7890");
         AddressBook addressBook = new AddressBook();
-        addressBook.addBuddy(buddy);
-        addressBook.removeBuddy(buddy);
+        if (addressBook.addBuddy(buddy)) {
+            System.out.println("Added " + buddy.getName());
+        }
+        if (addressBook.removeBuddy(buddy)) {
+            System.out.println("Removed " + buddy.getName());
+        }
     }
 }
