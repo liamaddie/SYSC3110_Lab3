@@ -17,9 +17,11 @@ public class BuddyInfo
         this.number = number;
     }
 
-    public String getName() {
-        return name;
-    }
+    public String getName() { return name; }
+
+    public String getAddress() { return address; }
+
+    public String getNumber() { return number; }
 
     public static void main(String[] args) {
         BuddyInfo bud = new BuddyInfo("Peter Griffin", "31 Spooner St.", "123-456-7890");
